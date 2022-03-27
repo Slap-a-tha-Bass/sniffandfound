@@ -1,4 +1,4 @@
-import { Map } from 'app/components/map'
+// import { Map } from 'app/components/map'
 import { Text, useSx, View, H1, P, Row, A, H2 } from 'dripsy'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
@@ -10,7 +10,7 @@ export function LostScreen() {
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
     >
       <H1 sx={{ fontWeight: '800', marginTop: -50 }}> Lost Pet? </H1>
-        <Map />
+        <Text>Map goes here</Text>
       {/* <MotiLink
           style={{backgroundColor: "#86E9E4", borderRadius: 10, padding: 10, marginTop: 20 }}
           href="/lost/mypet"
