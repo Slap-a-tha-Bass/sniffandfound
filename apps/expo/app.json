@@ -7,7 +7,10 @@
     "scheme": "solito-blank",
     "platforms": ["ios", "android"],
     "ios": {
-      "bundleIdentifier": "com.solito.blank"
+      "bundleIdentifier": "sniffandfound.vercel.app",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBd7ocTbal0xyZWCvLUbnZpqcfUzyJpIVc"
+      }
     }
   }
 }

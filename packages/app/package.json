@@ -3,11 +3,16 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@expo-google-fonts/nunito-sans": "^0.2.2",
+    "@expo-google-fonts/patrick-hand": "^0.2.2",
+    "@expo/vector-icons": "^12.0.5",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
     "dripsy": "^3.6.0",
+    "expo-font": "^10.0.5",
     "expo-linking": "^3.0.0",
     "moti": "0.18.0-alpha.8",
+    "react-native-maps": "^0.30.1",
     "solito": "0.0.22"
   },
   "sideEffects": false

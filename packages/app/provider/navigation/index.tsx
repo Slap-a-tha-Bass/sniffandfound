@@ -19,6 +19,8 @@ export function NavigationProvider({
               'user-detail': 'user/:id',
               'lost':'pets/lost',
               'mypet':'pets/mypet',
+              'merchants':'merchants',
+              'message':'message',
             },
           },
         }),

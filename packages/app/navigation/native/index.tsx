@@ -5,6 +5,8 @@ import { UserDetailScreen } from '../../features/user/detail-screen'
 import { LostScreen } from '../../features/pets/lost'
 import { MyPetScreen } from 'app/features/pets/mypet'
 import { View,useSx } from 'dripsy'
+import { MerchantsScreen } from 'app/features/merchants/screen'
+import { MessageScreen } from 'app/features/message/screen'
 
 const Logo =
   'https://res.cloudinary.com/slapathabass/image/upload/v1646146133/sniff_and_found/Transparency_Blue_zk7wme.png';
@@ -25,6 +27,8 @@ const Stack = createNativeStackNavigator<{
   }
   lost: any
   mypet: any
+  merchants: any
+  message: any
 }>()
 
 export function NativeNavigation() {
@@ -60,6 +64,20 @@ export function NativeNavigation() {
         component={MyPetScreen}
         options={{
           title: 'My Pet',
+        }}
+      />
+      <Stack.Screen
+        name="merchants"
+        component={MerchantsScreen}
+        options={{
+          title: 'Merchants',
+        }}
+      />
+      <Stack.Screen
+        name="message"
+        component={MessageScreen}
+        options={{
+          title: 'Message',
         }}
       />
     </Stack.Navigator>

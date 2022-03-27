@@ -9,7 +9,7 @@ export function HomeScreen() {
     <View
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
-      <H2 sx={{ fontWeight: '800' }}>Welcome to Sniff & Found</H2>
+      <H1 sx={{ fontWeight: '800' }}>Welcome to Sniff & Found</H1>
       <View sx={{ maxWidth: 600 }}>
         <P sx={{ textAlign: 'center' }}>
           Start by registering your pets!
