@@ -9,15 +9,23 @@ export function HomeScreen() {
     <View
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
-      <H1 sx={{ fontWeight: '800' }}>Welcome to Sniff & Found</H1>
+      <H1
+        sx={(theme) => ({
+          color: theme.colors.$primary,
+          fontFamily: theme.fonts.$primary,
+        })}
+      >
+        Welcome to Sniff & Found
+      </H1>
       <View sx={{ maxWidth: 600 }}>
-        <P sx={{ textAlign: 'center' }}>
-          Start by registering your pets!
-        </P>
+        <P sx={theme => ({
+          color: theme.colors.$secondary,
+          fontFamily: theme.fonts.$secondary,
+        })}>Start by registering your pets!</P>
       </View>
       <View sx={{ height: 32 }} />
       <Row>
-      <MotiLink
+        <MotiLink
           href="/pets/mypet"
           animate={({ hovered, pressed }) => {
             'worklet'
