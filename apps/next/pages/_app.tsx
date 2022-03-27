@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
           name="description"
           content="A social network for pets and finding lost pets."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Transparency_Blue.png" />
       </Head>
       <Provider>
         <Component {...pageProps} />

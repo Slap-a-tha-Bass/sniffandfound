@@ -2,23 +2,17 @@ import { Text, useSx, View, H1, P, Row, A, H2 } from 'dripsy'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
 
-export function HomeScreen() {
+export function LostScreen() {
   const sx = useSx()
-
   return (
     <View
-      sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
+      sx={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
     >
-      <H2 sx={{ fontWeight: '800' }}>Welcome to Sniff & Found</H2>
-      <View sx={{ maxWidth: 600 }}>
-        <P sx={{ textAlign: 'center' }}>
-          Start by registering your pets!
-        </P>
-      </View>
-      <View sx={{ height: 32 }} />
-      <Row>
+      <H1 sx={{ fontWeight: '800', marginTop: -50 }}> Lost Pet? </H1>
+
       <MotiLink
-          href="/pets/mypet"
+          style={{backgroundColor: "#86E9E4", borderRadius: 10, padding: 10, marginTop: 20 }}
+          href="/lost/mypet"
           animate={({ hovered, pressed }) => {
             'worklet'
 
@@ -34,14 +28,25 @@ export function HomeScreen() {
         >
           <Text
             selectable={false}
-            sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
+            sx={{ fontSize: 24, color: 'black', fontWeight: 'bold'}}
           >
-            My Pet
+            Your pet?
           </Text>
         </MotiLink>
-        <View sx={{ width: 32 }} />
+        <P sx={{ textAlign: 'center' }}>Saw a pet?</P>
+        <P sx={{ textAlign: 'center' }}>Caught a pet?</P>
+
+      <Row>
+        {/* <TextLink
+          href="/user/corey"
+          textProps={{
+            style: sx({ fontSize: 16, fontWeight: 'bold', color: 'blue' }),
+          }}
+        >
+          Regular Link
+        </TextLink> */}
         <MotiLink
-          href="/pets/lost"
+          href="/user/corey"
           animate={({ hovered, pressed }) => {
             'worklet'
 
@@ -59,7 +64,7 @@ export function HomeScreen() {
             selectable={false}
             sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
           >
-            Lost Pets
+            Register Now
           </Text>
         </MotiLink>
       </Row>

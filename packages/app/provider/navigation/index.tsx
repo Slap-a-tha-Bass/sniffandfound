@@ -17,6 +17,8 @@ export function NavigationProvider({
             screens: {
               home: '',
               'user-detail': 'user/:id',
+              'lost':'pets/lost',
+              'mypet':'pets/mypet',
             },
           },
         }),
