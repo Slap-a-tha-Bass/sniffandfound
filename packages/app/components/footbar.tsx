@@ -1,11 +1,8 @@
 import { View, Pressable, StyleSheet, Image } from 'react-native'
-import {
-  SimpleLineIcons,
-  MaterialIcons,
-  Entypo,
-} from '@expo/vector-icons'
+import { SimpleLineIcons, MaterialIcons, Entypo } from '@expo/vector-icons'
 import { MotiLink } from 'solito/moti'
 import { useSx, Text } from 'dripsy'
+import { TextLink } from 'solito/link'
 
 const Logo =
   'https://res.cloudinary.com/slapathabass/image/upload/c_crop,h_2576,w_1874/v1646146133/sniff_and_found/Transparency_Grey_pyicci.png'
@@ -16,94 +13,18 @@ export function FooterNav() {
     <View style={styles.container}>
       <View style={styles.navContainer}>
         <View style={styles.navBar}>
-          <MotiLink
-            href="/"
-            animate={({ hovered, pressed }) => {
-              'worklet'
-
-              return {
-                scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-                rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-              }
-            }}
-            transition={{
-              type: 'timing',
-              duration: 150,
-            }}
-          >
-            <Text
-              selectable={false}
-              sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
-            >
-              <SimpleLineIcons name="menu" size={24} color="#86E9E4" />
-            </Text>
-          </MotiLink>
-          <MotiLink
-            href="/pets/lost"
-            animate={({ hovered, pressed }) => {
-              'worklet'
-
-              return {
-                scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-                rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-              }
-            }}
-            transition={{
-              type: 'timing',
-              duration: 150,
-            }}
-          >
-            <Text
-              selectable={false}
-              sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
-            >
-              <Image style={{ width: 45, height: 45 }} source={{ uri: Logo }} />
-            </Text>
-          </MotiLink>
-          <MotiLink
-            href="/merchants"
-            animate={({ hovered, pressed }) => {
-              'worklet'
-
-              return {
-                scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-                rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-              }
-            }}
-            transition={{
-              type: 'timing',
-              duration: 150,
-            }}
-          >
-            <Text
-              selectable={false}
-              sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
-            >
-              <MaterialIcons name="store" size={24} color="#86E9E4" />
-            </Text>
-          </MotiLink>
-          <MotiLink
-            href="/message"
-            animate={({ hovered, pressed }) => {
-              'worklet'
-
-              return {
-                scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-                rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-              }
-            }}
-            transition={{
-              type: 'timing',
-              duration: 150,
-            }}
-          >
-            <Text
-              selectable={false}
-              sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
-            >
-              <Entypo name="chat" size={24} color="#86E9E4" />
-            </Text>
-          </MotiLink>
+          <TextLink href="/">
+            <SimpleLineIcons name="menu" size={24} color="#86E9E4" />
+          </TextLink>
+          <TextLink href="/pets/lost">
+            <Image style={{ width: 45, height: 45 }} source={{ uri: Logo }} />
+          </TextLink>
+          <TextLink href="/merchants">
+            <MaterialIcons name="store" size={24} color="#86E9E4" />
+          </TextLink>
+          <TextLink href="/message">
+            <Entypo name="chat" size={24} color="#86E9E4" />
+          </TextLink>
         </View>
       </View>
     </View>
