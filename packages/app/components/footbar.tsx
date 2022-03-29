@@ -19,10 +19,10 @@ export function FooterNav() {
           <TextLink href="/pets/lost">
             <Image style={{ width: 45, height: 45 }} source={{ uri: Logo }} />
           </TextLink>
-          <TextLink href="/merchants">
+          <TextLink href="/merchants/screen">
             <MaterialIcons name="store" size={24} color="#86E9E4" />
           </TextLink>
-          <TextLink href="/message">
+          <TextLink href="/message/screen">
             <Entypo name="chat" size={24} color="#86E9E4" />
           </TextLink>
         </View>
