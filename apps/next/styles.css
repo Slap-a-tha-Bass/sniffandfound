@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    position: absolute;
+    bottom: 20;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}

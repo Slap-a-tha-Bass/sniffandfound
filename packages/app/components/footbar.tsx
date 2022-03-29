@@ -1,8 +1,7 @@
 import { View, Pressable, StyleSheet, Image } from 'react-native'
 import {
-  Ionicons,
   SimpleLineIcons,
-  FontAwesome5,
+  MaterialIcons,
   Entypo,
 } from '@expo/vector-icons'
 import { MotiLink } from 'solito/moti'
@@ -80,7 +79,7 @@ export function FooterNav() {
               selectable={false}
               sx={{ fontSize: 16, color: 'black', fontWeight: 'bold' }}
             >
-              <FontAwesome5 name="store" size={24} color="#86E9E4" />
+              <MaterialIcons name="store" size={24} color="#86E9E4" />
             </Text>
           </MotiLink>
           <MotiLink
